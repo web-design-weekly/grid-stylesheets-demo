@@ -1,0 +1,16 @@
+[gap] == 300;
+
+.card--centered {
+  height: == ::window[height] - [gap];
+  width: == ::window[width] - [gap];
+  center-x: == ::window[center-x];
+  center-y: == ::window[center-y];
+  background: #92B0D2;
+}
+
+.card__content {
+  height: == ::[intrinsic-height];
+  width: == ::[intrinsic-width];
+  center-x: == .card--centered[center-x];
+  center-y: == .card--centered[center-y];
+}
