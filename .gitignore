@@ -7,16 +7,8 @@ vendor
 #Sass
 .sass-cache
 
-#Sourcemaps
+#Sourcemapss
 css/*.css.map
-
-#CSS
-css/*.css
-
-#Images
-img/**/*.png
-img/**/*.jpg
-img/**/*.svg
 
 #NPM Directory
 node_modules
