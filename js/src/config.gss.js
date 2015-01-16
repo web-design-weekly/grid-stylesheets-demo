@@ -37,4 +37,4 @@ GSS_CONFIG = {
   debug: false,
   warn: false,
   perf: false
-}
+};

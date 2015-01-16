@@ -1,16 +1,75 @@
-[gap] == 300;
+/*
+******************************************************
+ GSS Variables
+******************************************************
+*/
 
-.card--centered {
-  height: == ::window[height] - [gap];
-  width: == ::window[width] - [gap];
+[gap] == 20 !require;
+[radius] == [outer-radius] / 2 !require;
+[outer-radius] == 20 !require;
+
+
+/*
+******************************************************
+ GSS Layout
+******************************************************
+*/
+
+.card {
+  border-radius: == [outer-radius];
+  height: == ::window[height] - 480;
+  width: == ::window[width] - 480;
   center-x: == ::window[center-x];
   center-y: == ::window[center-y];
-  background: #92B0D2;
 }
 
-.card__content {
-  height: == ::[intrinsic-height];
-  width: == ::[intrinsic-width];
-  center-x: == .card--centered[center-x];
-  center-y: == .card--centered[center-y];
+.profile {
+  border-radius: == [radius];
 }
+
+#avatar {
+  border-radius: == ::[height] / 2;
+  height: == 150 !require;
+  width: == ::[height];
+  center-x: == .profile[center-x];
+}
+
+#name {
+  height: == ::[intrinsic-height] !require;
+  width: == ::[intrinsic-width] !require;
+  center-x: == .profile[center-x];
+}
+
+button {
+  border-radius: == [radius];
+  height: == ::[intrinsic-height] !require;
+  width: == ::[intrinsic-width] !require;
+  padding: == [gap];
+  padding-top: == [gap] / 2;
+  padding-bottom: == [gap] / 2;
+}
+
+
+/*
+******************************************************
+ VFL Layout
+******************************************************
+*/
+
+#button-2[center-x] == .card[center-x];
+
+@h |-[#button-1]~-~[#button-2]~-~[#button-3]-[#button-4]-|
+  in(.card)
+  gap([gap])
+  chain-top
+  !strong;
+
+@v |-[#avatar]-[#name]-| in(.profile)
+  gap([gap]);
+
+@v |-10-[.profile]-[#button-2]-|
+  in(.card)
+  gap([gap]);
+
+@v |-10-[.profile]      in(.card);
+@h |-10-[.profile]-10-| in(.card);
