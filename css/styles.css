@@ -1,0 +1,52 @@
+/*
+******************************************************
+ Base
+******************************************************
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/392/geometric-mountains.jpg) top left no-repeat;
+  background-size: cover;
+} 
+
+button {
+  border: none;
+  background: #145776;
+  color: white;
+}
+
+
+/*
+******************************************************
+ Styles
+******************************************************
+*/
+
+.card {
+  background: rgba(255, 255, 255, 0.36);
+}
+
+.profile {
+  background: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/392/geometric-mountains.jpg) top left no-repeat;
+  background-size: cover;
+}
+
+#avatar {
+  border: 8px solid #F7F7F7;
+}
+
+#name {
+  color: rgba(255, 227, 233, 1);
+  font-size: 48px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.62);
+}
+
+#button-2 {
+  background: #F5F5F5;
+  color: #010102;
+}
