@@ -1,11 +1,14 @@
 <!doctype html>
-<html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Grid Style Sheets Demo for Web Design Weekly</title>
+
     <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
     <link rel="stylesheet" href="gss/layout.gss" type="text/gss">
     <link rel="stylesheet" href="css/styles.css">
@@ -15,6 +18,7 @@
     <div class="profile"></div>
     <img src="img/avatar.jpg" id="avatar" alt="">
     <div id="name">Jake Sully</div>
+
     <button id="button-1">button-1</button>
     <button id="button-2">button-2</button>
     <button id="button-3">button-3</button>
@@ -22,5 +26,12 @@
 
     <script src="js/src/config.gss.js"></script>
     <script src="bower_components/gss/dist/gss.js"></script>
+
+    <script>
+      var root = document.getElementsByTagName('html')[0];
+      if (root.className === 'no-js') {
+        root.className = 'js';
+      }
+    </script>
   </body>
 </html>
