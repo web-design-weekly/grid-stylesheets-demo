@@ -1,16 +1,24 @@
-### Installation for GSS Demo
+### Submissions
 
-**Install NPM dependencies**
+Have a really great example/demo that you think should be included?
+File a request through the issue tracker and submit your demo using 
+a service similiar to CodePen for showcasing it.
+
+### Installation
+
+**NPM dependencies**
 
 ```bash
 npm install
 ```
 
-**Install Bower dependencies**
+**Bower dependencies**
 
 ```bash
 bower install
 ```
+
+### Development
 
 **Run Project**
 

@@ -1,6 +1,6 @@
 /*
 ******************************************************
- GSS Variables
+$Variables
 ******************************************************
 */
 
@@ -11,11 +11,11 @@
 
 /*
 ******************************************************
- GSS Layout
+$Position
 ******************************************************
 */
 
-.card {
+.profile__card {
   border-radius: == [outer-radius];
   height: == ::window[height] - 480;
   width: == ::window[width] - 480;
@@ -27,14 +27,14 @@
   border-radius: == [radius];
 }
 
-#avatar {
+.profile__avatar {
   border-radius: == ::[height] / 2;
   height: == 150 !require;
   width: == ::[height];
   center-x: == .profile[center-x];
 }
 
-#name {
+.profile__name {
   height: == ::[intrinsic-height] !require;
   width: == ::[intrinsic-width] !require;
   center-x: == .profile[center-x];
@@ -52,24 +52,24 @@ button {
 
 /*
 ******************************************************
- VFL Layout
+$Layout
 ******************************************************
 */
 
-#button-2[center-x] == .card[center-x];
+.button2[center-x] == .profile__card[center-x];
 
-@h |-[#button-1]~-~[#button-2]~-~[#button-3]-[#button-4]-|
-  in(.card)
+@h |-[.button1]~-~[.button2]~-~[.button3]-[.button4]-|
+  in(.profile__card)
   gap([gap])
   chain-top
   !strong;
 
-@v |-[#avatar]-[#name]-| in(.profile)
+@v |-[.profile__avatar]-[.profile__name]-| in(.profile)
   gap([gap]);
 
-@v |-10-[.profile]-[#button-2]-|
-  in(.card)
+@v |-10-[.profile]-[.button2]-|
+  in(.profile__card)
   gap([gap]);
 
-@v |-10-[.profile]      in(.card);
-@h |-10-[.profile]-10-| in(.card);
+@v |-10-[.profile]      in(.profile__card);
+@h |-10-[.profile]-10-| in(.profile__card);

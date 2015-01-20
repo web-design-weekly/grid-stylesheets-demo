@@ -14,20 +14,21 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <dv class="card"></dv>
+    <dv class="profile__card"></dv>
     <div class="profile"></div>
-    <img src="img/avatar.jpg" id="avatar" alt="">
-    <div id="name">Jake Sully</div>
+    <img src="img/avatar.jpg" class="profile__avatar" alt="">
+    <div class="profile__name">Jake Sully</div>
 
-    <button id="button-1">button-1</button>
-    <button id="button-2">button-2</button>
-    <button id="button-3">button-3</button>
-    <button id="button-4">button-4</button>
+    <button class="button1">Button 1</button>
+    <button class="button2">Button 2</button>
+    <button class="button3">Button 3</button>
+    <button class="button4">Button 4</button>
 
     <script src="js/src/config.gss.js"></script>
     <script src="bower_components/gss/dist/gss.js"></script>
 
     <script>
+      // Detect JavaScript Support for FOUC Control
       var root = document.getElementsByTagName('html')[0];
       if (root.className === 'no-js') {
         root.className = 'js';
