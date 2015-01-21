@@ -11,33 +11,33 @@ $Variables
 
 /*
 ******************************************************
-$Position
+$Dimensions
 ******************************************************
 */
-
-.profile__card {
-  border-radius: == [outer-radius];
-  height: == ::window[height] - 480;
-  width: == ::window[width] - 480;
-  center-x: == ::window[center-x];
-  center-y: == ::window[center-y];
-}
 
 .profile {
   border-radius: == [radius];
 }
 
+.profile__card {
+  border-radius: == [outer-radius];
+  center-x: == ::window[center-x];
+  center-y: == ::window[center-y];
+  height: == ::window[height] - 480;
+  width: == ::window[width] - 480;
+}
+
 .profile__avatar {
   border-radius: == ::[height] / 2;
+  center-x: == .profile[center-x];
   height: == 150 !require;
   width: == ::[height];
-  center-x: == .profile[center-x];
 }
 
 .profile__name {
+  center-x: == .profile[center-x];
   height: == ::[intrinsic-height] !require;
   width: == ::[intrinsic-width] !require;
-  center-x: == .profile[center-x];
 }
 
 button {
@@ -52,7 +52,7 @@ button {
 
 /*
 ******************************************************
-$Layout
+$Layout Constraints
 ******************************************************
 */
 
